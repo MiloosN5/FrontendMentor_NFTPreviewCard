@@ -1,0 +1,15 @@
+@use '../abstracts/' as a;
+
+.ntf {
+    &__footer {
+        &__credit {
+            @include a.flexbox('fd-row', 'fjc-start', 'fai-center', 'fw-nowrap', 'cg-normal', 'rg-normal');
+            @include a.padding('pi-0', 'pb-14-0_9px');
+            p {
+                a {
+                    @include a.transition('0.5s', 'ease-in-out');
+                }
+            }
+        }
+    }
+}

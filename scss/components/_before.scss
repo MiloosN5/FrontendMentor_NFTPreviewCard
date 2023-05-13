@@ -1,0 +1,20 @@
+@use '../abstracts/' as a;
+
+.ntf {
+    &__header {
+        button {
+            &::before {
+                @include a.flexbox('fd-column', 'fjc-center', 'fai-center', 'fw-nowrap', 'cg-normal', 'rg-normal');
+                @include a.before('content-empty', 'w-100%', 'mw-none', 'h-100%', 'primary-cyan');
+                @include a.border('b-none', 'br-10px');
+                @extend .opacity_0;
+                @include a.transition('0.5s', 'ease-in-out');
+            }
+            &:hover {
+                &::before {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}

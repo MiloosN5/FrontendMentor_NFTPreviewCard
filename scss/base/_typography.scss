@@ -1,0 +1,41 @@
+@use 'sass:map';
+@use '../abstracts/' as a;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    font-family: map.get(a.$fonts, 'ff-Outfit');
+}
+
+.ntf {
+    &__content {
+        &__title {
+            a {
+                @include a.font("fs-22px", "fw-600", 'lh-1.5-default', 'neutral-white', 'ta-left', 'ls-normal');
+            }
+        }
+        &__description {
+            @include a.font("fs-16_18px", "fw-300", 'lh-26px', 'primary-soft-blue', 'ta-left', 'ls-normal');
+        }
+        &__offer {
+            &__price {
+                h2 {
+                    @include a.font("fs-16_17.5px", "fw-400", 'lh-30px', 'primary-cyan', 'ta-left', 'ls-(-0.3px)');
+                }
+            }
+            &__countdown {
+                @include a.font("fs-16_17.5px", "fw-300", 'lh-30px', 'primary-soft-blue', 'ta-left', 'ls-(-0.1px)');
+            }
+        }
+    }
+    &__footer {
+        &__credit {
+            p {
+                @include a.font("fs-16_17.5px", "fw-300", 'lh-1.5-default', 'primary-soft-blue', 'ta-left', 'ls-(-0.3px)');
+                a {
+                    @include a.font("fs-16px", "fw-300", 'lh-1.5-default', 'neutral-white', 'ta-left', 'ls-(-0.3px)');
+                }
+            }
+        }
+    }
+}

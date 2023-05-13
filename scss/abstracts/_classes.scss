@@ -1,0 +1,12 @@
+@use 'sass:map';
+@use 'variables' as v;
+
+.ntf__header button.opacity_0,
+.ntf__header__view.opacity_0 {
+    opacity: 0;
+}
+
+.ntf__content__title a.hoverColor,
+.ntf__footer__credit p a.hoverColor {
+    color: map.get(v.$colors, 'primary-cyan');
+}

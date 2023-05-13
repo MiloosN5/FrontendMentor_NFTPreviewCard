@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+.ntf__header button.opacity_0, .ntf__header button::before,
+.ntf__header__view.opacity_0 {
+  opacity: 0;
+}
+
+.ntf__content__title a.hoverColor,
+.ntf__footer__credit p a.hoverColor {
+  color: hsl(178, 100%, 50%);
+}
+
+.ntf__header button {
+  border: none;
+  background: none;
+}
+
+.ntf__header__view {
+  position: absolute;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+/* typographic tweaks:
+    -> add accessible line-height
+    -> improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+.ntf__content__title a {
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: hsl(0, 0%, 100%);
+  text-align: left;
+  letter-spacing: normal;
+}
+.ntf__content__description {
+  font-size: clamp(1rem, 0.86rem + 0.62vw, 1.125rem);
+  font-weight: 300;
+  line-height: 1.625rem;
+  color: hsl(215, 51%, 70%);
+  text-align: left;
+  letter-spacing: normal;
+}
+.ntf__content__offer__price h2 {
+  font-size: clamp(1rem, 0.89rem + 0.46vw, 1.09375rem);
+  font-weight: 400;
+  line-height: 1.875rem;
+  color: hsl(178, 100%, 50%);
+  text-align: left;
+  letter-spacing: -0.3px;
+}
+.ntf__content__offer__countdown {
+  font-size: clamp(1rem, 0.89rem + 0.46vw, 1.09375rem);
+  font-weight: 300;
+  line-height: 1.875rem;
+  color: hsl(215, 51%, 70%);
+  text-align: left;
+  letter-spacing: -0.1px;
+}
+.ntf__footer__credit p {
+  font-size: clamp(1rem, 0.89rem + 0.46vw, 1.09375rem);
+  font-weight: 300;
+  line-height: 1.5;
+  color: hsl(215, 51%, 70%);
+  text-align: left;
+  letter-spacing: -0.3px;
+}
+.ntf__footer__credit p a {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: hsl(0, 0%, 100%);
+  text-align: left;
+  letter-spacing: -0.3px;
+}
+
+.ntf__header__equilibrium {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0);
+}
+.ntf__header__view {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.ntf__content__offer img {
+  margin-inline: 0 0.375rem;
+  margin-block: 0;
+}
+.ntf__content__offer__price img {
+  width: 0.6875rem;
+  max-width: none;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0);
+}
+.ntf__content__offer__countdown img {
+  width: 1.0625rem;
+  max-width: none;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0);
+}
+.ntf__footer__credit img {
+  width: 2.1875rem;
+  max-width: none;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0);
+  margin-inline: 0 0.875rem;
+  margin-block: 0;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 100%;
+}
+
+.ntf__header button::before {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  column-gap: normal;
+  row-gap: normal;
+  content: "";
+  position: absolute;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  background-color: hsl(178, 100%, 50%);
+  border: none;
+  border-radius: 0.625rem;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.ntf__header button:hover::before {
+  opacity: 0.5;
+}
+
+.ntf__header button {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  column-gap: normal;
+  row-gap: normal;
+}
+
+.ntf__header {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  column-gap: normal;
+  row-gap: normal;
+  border: none;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  column-gap: normal;
+  row-gap: normal;
+  padding-inline: 1.5rem;
+  padding-block: 0;
+}
+
+.ntf {
+  padding-inline: 1.5rem;
+  padding-block: 1.5rem;
+  border: none;
+  border-radius: 0.625rem;
+  width: 100%;
+  max-width: 22rem;
+  height: auto;
+  background-color: hsl(216, 50%, 16%);
+}
+
+.ntf__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: nowrap;
+  column-gap: normal;
+  row-gap: normal;
+  padding-inline: 0;
+  padding-block: 1.25rem clamp(0.6875rem, 0.18rem + 2.15vw, 1.125rem);
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+.ntf__content__title {
+  margin-inline: 0;
+  margin-block: 0 0.5rem;
+}
+.ntf__content__title a {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.ntf__content__description {
+  margin-inline: 0;
+  margin-block: 0 clamp(0.625rem, -0.17rem + 3.38vw, 1.3125rem);
+}
+
+.ntf__content__offer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: normal;
+  row-gap: normal;
+}
+.ntf__content__offer__price {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  column-gap: normal;
+  row-gap: normal;
+}
+.ntf__content__offer__countdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  column-gap: normal;
+  row-gap: normal;
+}
+
+.ntf__footer__credit {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  column-gap: normal;
+  row-gap: normal;
+  padding-inline: 0;
+  padding-block: 0.875rem clamp(0rem, -0.65rem + 2.77vw, 0.5625rem);
+}
+.ntf__footer__credit p a {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}

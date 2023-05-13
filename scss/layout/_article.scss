@@ -1,0 +1,7 @@
+@use '../abstracts/' as a;
+
+.ntf {
+    @include a.padding('pi-24px', 'pb-24px');
+    @include a.border('b-none', 'br-10px');
+    @include a.container('w-100%', 'mw-352px', 'h-auto', 'neutral-very-dark-blue-(card-BG)');
+}

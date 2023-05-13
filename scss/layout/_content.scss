@@ -1,0 +1,18 @@
+@use 'sass:map';
+@use '../abstracts/' as a;
+.ntf {
+    &__content {
+        @include a.flexbox('fd-column', 'fjc-start', 'fai-start', 'fw-nowrap', 'cg-normal', 'rg-normal');
+        @include a.padding('pi-0', 'pb-20-11_18px');
+        border-bottom: 1px solid map.get(a.$colors, 'neutral-very-dark-blue-(line)');
+        &__title {
+            @include a.margin('mi-0', 'mb-0-8px');
+            a {
+                @include a.transition('0.5s', 'ease-in-out');
+            }
+        }
+        &__description {
+            @include a.margin('mi-0', 'mb-0-10_21px');
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@use '../abstracts/' as a;
+
+.ntf {
+    &__header {
+        @include a.container('w-100%', 'mw-none', 'h-auto', 'void');
+        @include a.flexbox('fd-column', 'fjc-center', 'fai-center', 'fw-nowrap', 'cg-normal', 'rg-normal');
+        @include a.border('b-none', 'br-10px');
+        @include a.overflow('o-hidden');
+    }
+}

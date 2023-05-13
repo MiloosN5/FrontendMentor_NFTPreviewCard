@@ -1,0 +1,76 @@
+//////////// breakpoints
+@use 'sass:map';
+@use 'variables' as v;
+
+
+//----------------------- BREAKPOINTS -----------------------//
+@mixin breakpoint($size) {
+    @media (min-width: map-get(v.$breakpoints-up, $size)) {
+        @content;
+    }
+}
+
+//----------------------- FLEXBOX -----------------------//
+@mixin flexbox($direction, $justify, $align, $wrap, $column-gap, $row-gap) {
+    display: flex;
+    flex-direction: map.get(v.$flex, $direction);
+    justify-content: map.get(v.$flex, $justify);
+    align-items: map.get(v.$flex, $align);
+    flex-wrap: map.get(v.$flex, $wrap);
+    column-gap: map.get(v.$flex, $column-gap);
+    row-gap: map.get(v.$flex, $row-gap);
+}
+
+//----------------------- PADDING -----------------------//
+@mixin padding($padding-i, $padding-b) {
+    padding-inline: map.get(v.$padding, $padding-i);
+    padding-block: map.get(v.$padding, $padding-b);
+}
+
+//----------------------- MARGIN -----------------------//
+@mixin margin($margin-i, $margin-b) {
+    margin-inline: map.get(v.$margin, $margin-i);
+    margin-block: map.get(v.$margin, $margin-b);
+}
+
+//----------------------- BORDER -----------------------//
+@mixin border($border, $border-radius) {
+    border: map.get(v.$border, $border);
+    border-radius: map.get(v.$border, $border-radius);
+}
+
+//----------------------- FONT -----------------------//
+@mixin font($size, $weight, $lineHeight, $color, $align, $letterSpacing) {
+    font-size: map.get(v.$fonts, $size);
+    font-weight: map.get(v.$fonts, $weight);
+    line-height: map.get(v.$line-heights, $lineHeight);
+    color: map.get(v.$colors, $color);
+    text-align: map.get(v.$text-aligns, $align);
+    letter-spacing: map.get(v.$letter-spacing, $letterSpacing);
+}
+
+//----------------------- CONTAINER -----------------------//
+@mixin container($width, $max-width, $height, $color) {
+    width: map.get(v.$width, $width);
+    max-width: map.get(v.$width, $max-width);
+    height: map.get(v.$height, $height);
+    background-color: map.get(v.$colors, $color);
+}
+
+//----------------------- BEFORE (PSEUDO ELEMENT) -----------------------//
+@mixin before($content, $width, $max-width, $height, $color) {
+    content: map.get(v.$after-content, $content);
+    position: absolute;
+    @include container($width, $max-width, $height, $color);
+}
+
+//----------------------- TRANSITION -----------------------//
+@mixin transition($duration, $type) {
+    transition-duration: map.get(v.$transition, $duration);
+    transition-timing-function: map.get(v.$transition, $type);
+}
+
+//----------------------- OVERFLOW -----------------------//
+@mixin overflow($overflow) {
+    overflow: map.get(v.$overflow, $overflow);
+}

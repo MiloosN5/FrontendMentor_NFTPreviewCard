@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Frontend Mentor | NFT preview card component</title>
+</head>
+<body>
+    <main>
+        <!-- CARD -->
+        <article class="ntf">
+            <!-- HEADER -->
+            <header class="ntf__header">
+                <button>
+                    <img class="ntf__header__equilibrium" src="images/image-equilibrium.jpg">
+                    <img class="ntf__header__view opacity_0" src="images/icon-view.svg">
+                </button>
+            </header>
+            <!-- CONTENT -->
+            <div class="ntf__content">
+                <!-- heading -->
+                <h1 class="ntf__content__title">
+                    <a>Equilibrium #3429</a>
+                </h1>
+                <!-- content -->
+                <p class="ntf__content__description"> Our Equilibrium collection promotes balance and calm.</p>
+                <div class="ntf__content__offer">
+                    <div class="ntf__content__offer__price">
+                        <img src="images/icon-ethereum.svg">
+                        <h2>0.041 ETH</h2>
+                    </div>
+                    <div class="ntf__content__offer__countdown">
+                        <img src="images/icon-clock.svg">
+                        <p class="ntf__content__offer__countdown">3 days left</p>
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER -->
+            <footer class="ntf__footer">
+                <div class="ntf__footer__credit">
+                    <img src="images/image-avatar.png">
+                    <p>Creation of <a>Jules Wyvern</a></p>
+                </div>
+            </footer>
+        </article>
+    </main>
+    <!-- external JS file -->
+    <script src="script.js"></script>
+</body>
+</html>

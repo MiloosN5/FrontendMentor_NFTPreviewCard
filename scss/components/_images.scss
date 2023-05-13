@@ -1,0 +1,39 @@
+@use '../abstracts/' as a;
+
+.ntf {
+    &__header {
+        &__equilibrium {
+            @include a.container('w-100%', 'mw-none', 'h-auto', 'void');
+        }
+        &__view {
+            @include a.transition('0.5s', 'ease-in-out');
+            @extend %positionAbsolute;
+        }
+    }
+    &__content {
+        &__offer {
+            img {
+                @include a.margin('mi-0-6px', 'mb-0');
+            }
+            &__price {
+                img {
+                    @include a.container('w-11px', 'mw-none', 'h-auto', 'void');
+                }
+            }
+            &__countdown {
+                img {
+                    @include a.container('w-17px', 'mw-none', 'h-auto', 'void');
+                }               
+            }
+        }
+    }
+    &__footer {
+        &__credit {
+            img {
+                @include a.container('w-35px', 'mw-none', 'h-auto', 'void');
+                @include a.margin('mi-0-14px', 'mb-0');
+                @include a.border('b-1px-solid-white', 'br-100%');
+            }
+        }
+    }
+}

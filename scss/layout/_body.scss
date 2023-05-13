@@ -1,0 +1,7 @@
+@use '../abstracts/' as a;
+
+body {
+    @include a.container('w-100%', 'mw-none', 'h-auto', 'neutral-very-dark-blue-(main-BG)');
+    @include a.flexbox('fd-column', 'fjc-center', 'fai-center', 'fw-nowrap', 'cg-normal', 'rg-normal');
+    @include a.padding('pi-24px', 'pb-0');
+}

@@ -1,0 +1,16 @@
+@use '../abstracts/' as a;
+
+.ntf {
+    &__content {
+        &__offer {
+            width: 100%;
+            @include a.flexbox('fd-row', 'fjc-spacebetween', 'fai-center', 'fw-wrap', 'cg-normal', 'rg-normal');
+            &__price {
+                @include a.flexbox('fd-row', 'fjc-start', 'fai-center', 'fw-nowrap', 'cg-normal', 'rg-normal');
+            }
+            &__countdown {
+                @include a.flexbox('fd-row', 'fjc-start', 'fai-center', 'fw-nowrap', 'cg-normal', 'rg-normal');
+            }
+        }
+    }
+}
