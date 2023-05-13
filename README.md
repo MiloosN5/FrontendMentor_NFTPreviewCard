@@ -53,7 +53,7 @@ Users should be able to:
 
 ### What I learned
 
-* Organizing & optimizing my sass code using mixins, classes, placeholders, variables & functions. Since there are used so many different mixins (as a templates), all variables are putted in lists, rather than each one writting as a individual variables. Using 'map.get' you can connect your desired text value with the key in the list. 
+* Organizing & optimizing my sass code using mixins, classes, placeholders, variables & functions. Since there are used so many different mixins (as a templates), all variables are putted in lists, rather than each one writting as a individual variables. Using 'map.get' you can connect your desired text value with the key in the list.<br/>
 **Note** When using map.get, don't forget to include 'map'.
 
   * using values from lists 
@@ -65,10 +65,16 @@ Users should be able to:
         }
     ```
     ```scss
+        $overflow: (
+          'o-auto': auto,
+          'o-hidden': hidden,
+        );
+    ```
+    ```scss
         @include a.overflow('o-hidden');
     ```
       
-* Using gulp as a toolkit to automate & enhance workflow. It can compiled our files such as .scss into .css. Also, one of its adventages is automatic 'refresh' of our page when some changes occured in our workspace. Using our custom made 'watch task' we defined where our server will start and which files to observe. If something changed in these files, thanks to 'browser-sync' our page will be refreshed. All tasks need to be exported.  
+* Using gulp as a toolkit to automate & enhance workflow. It can compiled our files such as .scss into .css. Also, one of its adventages is automatic 'refresh' of our page when some changes occured in our workspace. Using our custom made 'watch task' we defined where our server will start and which files to observe. If something changed in these files, thanks to 'browser-sync' our page will be refreshed. All tasks need to be exported.<br/>
 **Note** After everything is set up, we can launch our 'gulp' using 'gulp watch'. Then, we don't need to manually refresh page or call 'gulp watch' again, gulp will do it automatically. 
 
   * installing gulp-cli, gulp, gulp-sass & browser-sync
