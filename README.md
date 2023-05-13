@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My solution URL](https://github.com/MiloosN5/FrontendMentor_OrderSummary_Challenge)
+- Solution URL: [My solution URL](https://github.com/MiloosN5/FrontendMentor_NFTPreviewCard)
 - Live Site URL: [My live site URL](https://miloosn5.github.io/FrontendMentor_OrderSummary_Challenge/)
 
 
@@ -110,7 +110,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [Gulp v4 - Sass and BrowserSync setup](https://www.youtube.com/watch?v=QgMQeLymAdU) - Learn how to setup basic gulfile.js file.
+- [Gulp v4 - Sass and BrowserSync setup - Kevin Powell (Youtube)](https://www.youtube.com/watch?v=QgMQeLymAdU) - Learn how to setup basic gulfile.js file.
 - [SASS](https://sass-lang.com/documentation/at-rules) - You can found detailed documentation on the official page of the SASS. Check out for example "at-rules".
 - [7-1 pattern SASS](https://sass-guidelin.es/#component-structure) - "7-1" pattern is one of the most used sass organization. It is also very pratical. 
 - [Clamp calculator](https://royalfig.github.io/fluid-typography-calculator/) - Since there are so many different devices, desirable is to make your font fluid from one size to another.
